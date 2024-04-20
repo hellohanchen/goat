@@ -84,21 +84,25 @@
     <div class="container">
         <div class="heading_container">
             <h2>
-                Interact with Contract
+                GOAT SMART CONTRACT
             </h2>
             <p>
                 GOAT contract is deployed on Ethereum mainnet at address 0x46c5264728af4dbe274929f9509fbeabf8cca2c9
                 (<a href="https://etherscan.io/address/0x46c5264728af4dbe274929f9509fbeabf8cca2c9">Check contract on
                 Etherscan</a>) <br/>
-                Funders can deposit USDC token to the contract. And withdraw deposited assets at anytime. <br/> <br/>
+                Funders can deposit USDC token to the contract. And withdraw deposited USDC at anytime. <br/> <br/>
                 (Vouching coming soon...) <br/>
-                Funders can vouch for the project when there is a chance to purchase team shares, vouched assets will be
-                moved by Project GOAT team to purchase the shares and vouchers will be share owners after the
+                Funders can vouch for the project when there is a chance to purchase team shares, vouching will give
+                Project GOAT team to move deposited USDC. <br/>
+                Vouched USDC will be used to purchase the shares and vouchers will be share owners after the
                 transaction is done. <br/>
-                Before vouching, deposited assets are totally under funders' control. <br/> <br/>
-                When "Approve USDC", please make sure the contract address is 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 <br/>
-                When "Deposit/Withdraw", please make sure the contract address is 0x46c5264728af4dbe274929f9509fbeabf8cca2c9 <br/>
-                *USDC uses 6 decimal points so for the following amounts, 1 unit = 0.000001 $USDC, i.e. 1000000 = 1 $USDC.
+                Before vouching, deposited USDC are totally under funders' control. <br/> <br/>
+                To deposit USDC*, users need to first approve GOAT contract to move USDC out from user wallet. <br/>
+                When "Approve USDC", please make sure the contract address is 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 <br/> <br/>
+                After approving, users can deposit any amount, not exceeding approved amount, to the GOAT contract and become funder**. <br/>
+                When "Deposit/Withdraw", please make sure the contract address is 0x46c5264728af4dbe274929f9509fbeabf8cca2c9 <br/> <br/>
+                *USDC uses 6 decimal points so for the USDC amounts, 1 unit = 0.000001 $USDC (i.e. 1000000 = 1 $USDC). <br/>
+                **After funding, remember to join our Discord server and verify your funder roles.
             </p>
         </div>
         <div class="work_container layout_padding2 ">
@@ -125,7 +129,7 @@
                 </div>
                 <div class="withdraw-form" id="withdrawForm" style="display:none">
                     <div>
-                        <label for="withdrawAmount"></label><input type="number" placeholder="deposit amount" id="withdrawAmount">
+                        <label for="withdrawAmount"></label><input type="number" placeholder="withdraw amount" id="withdrawAmount">
                     </div>
                     <button id="withdrawButton">
                         Withdraw
@@ -252,7 +256,7 @@
                         How can fans own the teams?
                     </h5>
                     <p>
-                        Owning shares of professional sports teams is never easy. But I believe the impact of a strong
+                        Owning shares of professional sports teams is never easy. But we believe the impact of a strong
                         community of fans can give us great advantages. While there are many unanswered questions, we
                         have a general blueprint in mind:
                     </p>
